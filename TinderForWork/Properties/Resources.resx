@@ -118,28 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="70572494-project-presentation-icon-vector-illustration-style-is-flat-iconic-symbol-black-color-transparent-ba" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\70572494-project-presentation-icon-vector-illustration-style-is-flat-iconic-symbol-black-color-transparent-ba.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="black-heart-hi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\black-heart-hi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coolest-roller-coaster-clipart-11-individual-people-icon-images-single-user-icon-clip-roller-coaster-clipart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\coolest-roller-coaster-clipart-11-individual-people-icon-images-single-user-icon-clip-roller-coaster-clipart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gear-clipart-MiLGz4A9T" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\gear-clipart-MiLGz4A9T.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="group-clipart-clip-art-group-300x300" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\group-clipart-clip-art-group-300x300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="thumbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\thumbs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="thumbsdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\thumbsdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coolest-roller-coaster-clipart-11-individual-people-icon-images-single-user-icon-clip-roller-coaster-clipart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\coolest-roller-coaster-clipart-11-individual-people-icon-images-single-user-icon-clip-roller-coaster-clipart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="70572494-project-presentation-icon-vector-illustration-style-is-flat-iconic-symbol-black-color-transparent-ba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\70572494-project-presentation-icon-vector-illustration-style-is-flat-iconic-symbol-black-color-transparent-ba.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gear-clipart-MiLGz4A9T" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\gear-clipart-MiLGz4A9T.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus-sign-hi (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\plus-sign-hi (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

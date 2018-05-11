@@ -32,32 +32,32 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Dislike = new System.Windows.Forms.Button();
+            this.SuperLike = new System.Windows.Forms.Button();
+            this.Like = new System.Windows.Forms.Button();
+            this.VerComoUsuario = new System.Windows.Forms.Button();
+            this.VerComoProyecto = new System.Windows.Forms.Button();
+            this.AñadirProyecto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.VerComoUsuario);
+            this.panel1.Controls.Add(this.VerComoProyecto);
+            this.panel1.Controls.Add(this.AñadirProyecto);
             this.panel1.Location = new System.Drawing.Point(677, 67);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(111, 259);
+            this.panel1.Size = new System.Drawing.Size(111, 294);
             this.panel1.TabIndex = 1;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(150, 338);
+            this.groupBox1.Controls.Add(this.Dislike);
+            this.groupBox1.Controls.Add(this.SuperLike);
+            this.groupBox1.Controls.Add(this.Like);
+            this.groupBox1.Location = new System.Drawing.Point(102, 338);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(515, 100);
             this.groupBox1.TabIndex = 2;
@@ -81,69 +81,69 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "label1dadfsdcsdcsdvsdcsdc";
             // 
-            // button2
+            // Dislike
             // 
-            this.button2.BackgroundImage = global::TinderForWork.Properties.Resources.thumbsdown;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(6, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 81);
-            this.button2.TabIndex = 0;
-            this.button2.UseVisualStyleBackColor = true;
+            this.Dislike.BackgroundImage = global::TinderForWork.Properties.Resources.thumbsdown;
+            this.Dislike.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Dislike.Location = new System.Drawing.Point(6, 13);
+            this.Dislike.Name = "Dislike";
+            this.Dislike.Size = new System.Drawing.Size(84, 81);
+            this.Dislike.TabIndex = 0;
+            this.Dislike.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // SuperLike
             // 
-            this.button5.BackgroundImage = global::TinderForWork.Properties.Resources.black_heart_hi;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(221, 13);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 81);
-            this.button5.TabIndex = 0;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button1_Click);
+            this.SuperLike.BackgroundImage = global::TinderForWork.Properties.Resources.black_heart_hi;
+            this.SuperLike.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SuperLike.Location = new System.Drawing.Point(221, 13);
+            this.SuperLike.Name = "SuperLike";
+            this.SuperLike.Size = new System.Drawing.Size(84, 81);
+            this.SuperLike.TabIndex = 0;
+            this.SuperLike.UseVisualStyleBackColor = true;
+            this.SuperLike.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button1
+            // Like
             // 
-            this.button1.BackgroundImage = global::TinderForWork.Properties.Resources.thumbs;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(425, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 81);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Like.BackgroundImage = global::TinderForWork.Properties.Resources.thumbs;
+            this.Like.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Like.Location = new System.Drawing.Point(425, 13);
+            this.Like.Name = "Like";
+            this.Like.Size = new System.Drawing.Size(84, 81);
+            this.Like.TabIndex = 0;
+            this.Like.UseVisualStyleBackColor = true;
+            this.Like.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button4
+            // VerComoUsuario
             // 
-            this.button4.BackColor = System.Drawing.Color.Gainsboro;
-            this.button4.BackgroundImage = global::TinderForWork.Properties.Resources.coolest_roller_coaster_clipart_11_individual_people_icon_images_single_user_icon_clip_roller_coaster_clipart;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(22, 90);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 71);
-            this.button4.TabIndex = 0;
-            this.button4.UseVisualStyleBackColor = false;
+            this.VerComoUsuario.BackColor = System.Drawing.Color.Gainsboro;
+            this.VerComoUsuario.BackgroundImage = global::TinderForWork.Properties.Resources.coolest_roller_coaster_clipart_11_individual_people_icon_images_single_user_icon_clip_roller_coaster_clipart;
+            this.VerComoUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VerComoUsuario.Location = new System.Drawing.Point(22, 90);
+            this.VerComoUsuario.Name = "VerComoUsuario";
+            this.VerComoUsuario.Size = new System.Drawing.Size(75, 71);
+            this.VerComoUsuario.TabIndex = 0;
+            this.VerComoUsuario.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // VerComoProyecto
             // 
-            this.button3.BackgroundImage = global::TinderForWork.Properties.Resources.group_clipart_clip_art_group_300x300;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(22, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 81);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = true;
+            this.VerComoProyecto.BackgroundImage = global::TinderForWork.Properties.Resources.group_clipart_clip_art_group_300x300;
+            this.VerComoProyecto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VerComoProyecto.Location = new System.Drawing.Point(22, 3);
+            this.VerComoProyecto.Name = "VerComoProyecto";
+            this.VerComoProyecto.Size = new System.Drawing.Size(75, 81);
+            this.VerComoProyecto.TabIndex = 0;
+            this.VerComoProyecto.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // AñadirProyecto
             // 
-            this.button6.BackgroundImage = global::TinderForWork.Properties.Resources.gear_clipart_MiLGz4A9T;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Location = new System.Drawing.Point(22, 167);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 74);
-            this.button6.TabIndex = 0;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button1_Click);
+            this.AñadirProyecto.BackgroundImage = global::TinderForWork.Properties.Resources.plus_sign_hi__1_;
+            this.AñadirProyecto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AñadirProyecto.Location = new System.Drawing.Point(22, 167);
+            this.AñadirProyecto.Name = "AñadirProyecto";
+            this.AñadirProyecto.Size = new System.Drawing.Size(75, 74);
+            this.AñadirProyecto.TabIndex = 0;
+            this.AñadirProyecto.UseVisualStyleBackColor = true;
+            this.AñadirProyecto.Click += new System.EventHandler(this.button1_Click);
             // 
             // Matching
             // 
@@ -167,15 +167,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Like;
+        private System.Windows.Forms.Button Dislike;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button VerComoUsuario;
+        private System.Windows.Forms.Button VerComoProyecto;
+        private System.Windows.Forms.Button SuperLike;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button AñadirProyecto;
     }
 }

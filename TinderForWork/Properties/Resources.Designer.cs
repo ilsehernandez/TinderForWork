@@ -125,6 +125,16 @@ namespace TinderForWork.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plus_sign_hi__1_ {
+            get {
+                object obj = ResourceManager.GetObject("plus-sign-hi (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap thumbs {
             get {
                 object obj = ResourceManager.GetObject("thumbs", resourceCulture);

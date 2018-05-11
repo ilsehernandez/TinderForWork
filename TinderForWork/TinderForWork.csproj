@@ -206,6 +206,7 @@
     <Content Include="Images\gear-clipart-MiLGz4A9T.png" />
     <Content Include="Images\group-clipart-clip-art-group-300x300.png" />
     <Content Include="Images\images.png" />
+    <None Include="Images\plus-sign-hi %281%29.png" />
     <Content Include="Images\thumbs.png" />
     <Content Include="Images\thumbsdown.png" />
     <Content Include="Models\Model1.Context.tt">

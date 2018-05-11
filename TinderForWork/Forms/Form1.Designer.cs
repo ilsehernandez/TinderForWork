@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TextBoxMatriculaLog = new System.Windows.Forms.TextBox();
+            this.TextBoxContraLog = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.NuevoUsuario = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BotonLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // TextBoxMatriculaLog
             // 
-            this.textBox1.Location = new System.Drawing.Point(53, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.TextBoxMatriculaLog.Location = new System.Drawing.Point(53, 59);
+            this.TextBoxMatriculaLog.Name = "TextBoxMatriculaLog";
+            this.TextBoxMatriculaLog.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxMatriculaLog.TabIndex = 0;
             // 
-            // textBox2
+            // TextBoxContraLog
             // 
-            this.textBox2.Location = new System.Drawing.Point(53, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 0;
+            this.TextBoxContraLog.Location = new System.Drawing.Point(53, 118);
+            this.TextBoxContraLog.Name = "TextBoxContraLog";
+            this.TextBoxContraLog.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxContraLog.TabIndex = 0;
             // 
             // label1
             // 
@@ -70,45 +70,45 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
             // 
-            // linkLabel1
+            // NuevoUsuario
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(63, 156);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(78, 13);
-            this.linkLabel1.TabIndex = 2;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Nuevo Usuario";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.NuevoUsuario.AutoSize = true;
+            this.NuevoUsuario.Location = new System.Drawing.Point(63, 156);
+            this.NuevoUsuario.Name = "NuevoUsuario";
+            this.NuevoUsuario.Size = new System.Drawing.Size(78, 13);
+            this.NuevoUsuario.TabIndex = 2;
+            this.NuevoUsuario.TabStop = true;
+            this.NuevoUsuario.Text = "Nuevo Usuario";
+            this.NuevoUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.linkLabel1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.NuevoUsuario);
+            this.panel1.Controls.Add(this.TextBoxMatriculaLog);
+            this.panel1.Controls.Add(this.TextBoxContraLog);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(40, 23);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(215, 201);
             this.panel1.TabIndex = 3;
             // 
-            // button1
+            // BotonLogin
             // 
-            this.button1.Location = new System.Drawing.Point(106, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BotonLogin.Location = new System.Drawing.Point(106, 247);
+            this.BotonLogin.Name = "BotonLogin";
+            this.BotonLogin.Size = new System.Drawing.Size(75, 23);
+            this.BotonLogin.TabIndex = 4;
+            this.BotonLogin.Text = "Login";
+            this.BotonLogin.UseVisualStyleBackColor = true;
+            this.BotonLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(307, 302);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BotonLogin);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Login";
@@ -120,13 +120,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TextBoxMatriculaLog;
+        private System.Windows.Forms.TextBox TextBoxContraLog;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel NuevoUsuario;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BotonLogin;
     }
 }
 
