@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0c9cd1b7a18942f6b1206f6a05673d87" Name="Diagram1">
+        <EntityTypeShape EntityType="TinderForWorkDBModel.HabilidadesReqProyecto" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="TinderForWorkDBModel.HabilidadesUsuario" Width="1.5" PointX="5.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="TinderForWorkDBModel.HorasServicioDada" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TinderForWorkDBModel.Match" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TinderForWorkDBModel.PagoProj" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TinderForWorkDBModel.ProyectoInfo" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TinderForWorkDBModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TinderForWorkDBModel.TarjetasUsuario" Width="1.5" PointX="5.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TinderForWorkDBModel.UsuarioInfo" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <AssociationConnector Association="TinderForWorkDBModel.FK_HabilidadesReqProyecto_ProyectoInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="TinderForWorkDBModel.FK_HabilidadesUsuario_UsuarioInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="TinderForWorkDBModel.FK_HabilidadesUsuario_UsuarioInfo1" ManuallyRouted="false" />
+        <AssociationConnector Association="TinderForWorkDBModel.FK_HorasServicioDadas_ProyectoInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="TinderForWorkDBModel.FK_Match_ProyectoInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="TinderForWorkDBModel.FK_Match_UsuarioInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="TinderForWorkDBModel.FK_PagoProj_ProyectoInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="TinderForWorkDBModel.FK_TarjetasUsuarios_UsuarioInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="TinderForWorkDBModel.Experiencia" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

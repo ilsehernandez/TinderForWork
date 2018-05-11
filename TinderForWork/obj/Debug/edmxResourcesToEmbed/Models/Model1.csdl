@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TinderForWorkDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="HabilidadesReqProyecto">
+    <Key>
+      <PropertyRef Name="ProyectoID" />
+      <PropertyRef Name="Habilidades" />
+    </Key>
+    <Property Name="ProyectoID" Type="Int32" Nullable="false" />
+    <Property Name="Habilidades" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ProyectoInfo" Relationship="Self.FK_HabilidadesReqProyecto_ProyectoInfo" FromRole="HabilidadesReqProyecto" ToRole="ProyectoInfo" />
+  </EntityType>
+  <EntityType Name="HabilidadesUsuario">
+    <Key>
+      <PropertyRef Name="Matricula" />
+      <PropertyRef Name="Habilidad" />
+    </Key>
+    <Property Name="Matricula" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Habilidad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="UsuarioInfo" Relationship="Self.FK_HabilidadesUsuario_UsuarioInfo" FromRole="HabilidadesUsuario" ToRole="UsuarioInfo" />
+    <NavigationProperty Name="UsuarioInfo1" Relationship="Self.FK_HabilidadesUsuario_UsuarioInfo1" FromRole="HabilidadesUsuario" ToRole="UsuarioInfo" />
+  </EntityType>
+  <EntityType Name="HorasServicioDada">
+    <Key>
+      <PropertyRef Name="IDProyecto" />
+    </Key>
+    <Property Name="IDProyecto" Type="Int32" Nullable="false" />
+    <Property Name="HorasServicio" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProyectoInfo" Relationship="Self.FK_HorasServicioDadas_ProyectoInfo" FromRole="HorasServicioDadas" ToRole="ProyectoInfo" />
+  </EntityType>
+  <EntityType Name="Match">
+    <Key>
+      <PropertyRef Name="MatchID" />
+    </Key>
+    <Property Name="EstAlumno" Type="Int32" Nullable="false" />
+    <Property Name="Matricula" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ProyectoID" Type="Int32" Nullable="false" />
+    <Property Name="MatchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="ProyectoInfo" Relationship="Self.FK_Match_ProyectoInfo" FromRole="Match" ToRole="ProyectoInfo" />
+    <NavigationProperty Name="UsuarioInfo" Relationship="Self.FK_Match_UsuarioInfo" FromRole="Match" ToRole="UsuarioInfo" />
+  </EntityType>
+  <EntityType Name="PagoProj">
+    <Key>
+      <PropertyRef Name="IDProyecto" />
+    </Key>
+    <Property Name="IDProyecto" Type="Int32" Nullable="false" />
+    <Property Name="Pago" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="ProyectoInfo" Relationship="Self.FK_PagoProj_ProyectoInfo" FromRole="PagoProj" ToRole="ProyectoInfo" />
+  </EntityType>
+  <EntityType Name="ProyectoInfo">
+    <Key>
+      <PropertyRef Name="ProyectoID" />
+    </Key>
+    <Property Name="ProyectoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HorasTrabajo" Type="Int32" Nullable="false" />
+    <Property Name="NombreProyecto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="140" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Campo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Matricula" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" />
+    <NavigationProperty Name="HabilidadesReqProyectoes" Relationship="Self.FK_HabilidadesReqProyecto_ProyectoInfo" FromRole="ProyectoInfo" ToRole="HabilidadesReqProyecto" />
+    <NavigationProperty Name="HorasServicioDada" Relationship="Self.FK_HorasServicioDadas_ProyectoInfo" FromRole="ProyectoInfo" ToRole="HorasServicioDadas" />
+    <NavigationProperty Name="Matches" Relationship="Self.FK_Match_ProyectoInfo" FromRole="ProyectoInfo" ToRole="Match" />
+    <NavigationProperty Name="PagoProj" Relationship="Self.FK_PagoProj_ProyectoInfo" FromRole="ProyectoInfo" ToRole="PagoProj" />
+    <NavigationProperty Name="UsuarioInfoes" Relationship="Self.Experiencia" FromRole="ProyectoInfo" ToRole="UsuarioInfo" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TarjetasUsuario">
+    <Key>
+      <PropertyRef Name="Matricula" />
+      <PropertyRef Name="Tarjeta" />
+    </Key>
+    <Property Name="Matricula" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Tarjeta" Type="String" MaxLength="16" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="UsuarioInfo" Relationship="Self.FK_TarjetasUsuarios_UsuarioInfo" FromRole="TarjetasUsuarios" ToRole="UsuarioInfo" />
+  </EntityType>
+  <EntityType Name="UsuarioInfo">
+    <Key>
+      <PropertyRef Name="Matricula" />
+    </Key>
+    <Property Name="Matricula" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ApellidoP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ApellidoM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Contrasena" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Carrera" Type="Int32" Nullable="false" />
+    <Property Name="Campus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StatusOcupado" Type="Boolean" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="HabilidadesUsuarios" Relationship="Self.FK_HabilidadesUsuario_UsuarioInfo" FromRole="UsuarioInfo" ToRole="HabilidadesUsuario" />
+    <NavigationProperty Name="HabilidadesUsuarios1" Relationship="Self.FK_HabilidadesUsuario_UsuarioInfo1" FromRole="UsuarioInfo" ToRole="HabilidadesUsuario" />
+    <NavigationProperty Name="Matches" Relationship="Self.FK_Match_UsuarioInfo" FromRole="UsuarioInfo" ToRole="Match" />
+    <NavigationProperty Name="TarjetasUsuarios" Relationship="Self.FK_TarjetasUsuarios_UsuarioInfo" FromRole="UsuarioInfo" ToRole="TarjetasUsuarios" />
+    <NavigationProperty Name="ProyectoInfoes" Relationship="Self.Experiencia" FromRole="UsuarioInfo" ToRole="ProyectoInfo" />
+  </EntityType>
+  <Association Name="FK_HabilidadesReqProyecto_ProyectoInfo">
+    <End Role="ProyectoInfo" Type="Self.ProyectoInfo" Multiplicity="1" />
+    <End Role="HabilidadesReqProyecto" Type="Self.HabilidadesReqProyecto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProyectoInfo">
+        <PropertyRef Name="ProyectoID" />
+      </Principal>
+      <Dependent Role="HabilidadesReqProyecto">
+        <PropertyRef Name="ProyectoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HabilidadesUsuario_UsuarioInfo">
+    <End Role="UsuarioInfo" Type="Self.UsuarioInfo" Multiplicity="1" />
+    <End Role="HabilidadesUsuario" Type="Self.HabilidadesUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuarioInfo">
+        <PropertyRef Name="Matricula" />
+      </Principal>
+      <Dependent Role="HabilidadesUsuario">
+        <PropertyRef Name="Matricula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HabilidadesUsuario_UsuarioInfo1">
+    <End Role="UsuarioInfo" Type="Self.UsuarioInfo" Multiplicity="1" />
+    <End Role="HabilidadesUsuario" Type="Self.HabilidadesUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuarioInfo">
+        <PropertyRef Name="Matricula" />
+      </Principal>
+      <Dependent Role="HabilidadesUsuario">
+        <PropertyRef Name="Matricula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HorasServicioDadas_ProyectoInfo">
+    <End Role="ProyectoInfo" Type="Self.ProyectoInfo" Multiplicity="1" />
+    <End Role="HorasServicioDadas" Type="Self.HorasServicioDada" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ProyectoInfo">
+        <PropertyRef Name="ProyectoID" />
+      </Principal>
+      <Dependent Role="HorasServicioDadas">
+        <PropertyRef Name="IDProyecto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Match_ProyectoInfo">
+    <End Role="ProyectoInfo" Type="Self.ProyectoInfo" Multiplicity="1" />
+    <End Role="Match" Type="Self.Match" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProyectoInfo">
+        <PropertyRef Name="ProyectoID" />
+      </Principal>
+      <Dependent Role="Match">
+        <PropertyRef Name="ProyectoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Match_UsuarioInfo">
+    <End Role="UsuarioInfo" Type="Self.UsuarioInfo" Multiplicity="1" />
+    <End Role="Match" Type="Self.Match" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuarioInfo">
+        <PropertyRef Name="Matricula" />
+      </Principal>
+      <Dependent Role="Match">
+        <PropertyRef Name="Matricula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PagoProj_ProyectoInfo">
+    <End Role="ProyectoInfo" Type="Self.ProyectoInfo" Multiplicity="1" />
+    <End Role="PagoProj" Type="Self.PagoProj" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ProyectoInfo">
+        <PropertyRef Name="ProyectoID" />
+      </Principal>
+      <Dependent Role="PagoProj">
+        <PropertyRef Name="IDProyecto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TarjetasUsuarios_UsuarioInfo">
+    <End Role="UsuarioInfo" Type="Self.UsuarioInfo" Multiplicity="1" />
+    <End Role="TarjetasUsuarios" Type="Self.TarjetasUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuarioInfo">
+        <PropertyRef Name="Matricula" />
+      </Principal>
+      <Dependent Role="TarjetasUsuarios">
+        <PropertyRef Name="Matricula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Experiencia">
+    <End Role="ProyectoInfo" Type="Self.ProyectoInfo" Multiplicity="*" />
+    <End Role="UsuarioInfo" Type="Self.UsuarioInfo" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="TinderForWorkDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="HabilidadesReqProyectoes" EntityType="Self.HabilidadesReqProyecto" />
+    <EntitySet Name="HabilidadesUsuarios" EntityType="Self.HabilidadesUsuario" />
+    <EntitySet Name="HorasServicioDadas" EntityType="Self.HorasServicioDada" />
+    <EntitySet Name="Matches" EntityType="Self.Match" />
+    <EntitySet Name="PagoProjs" EntityType="Self.PagoProj" />
+    <EntitySet Name="ProyectoInfoes" EntityType="Self.ProyectoInfo" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="TarjetasUsuarios" EntityType="Self.TarjetasUsuario" />
+    <EntitySet Name="UsuarioInfoes" EntityType="Self.UsuarioInfo" />
+    <AssociationSet Name="FK_HabilidadesReqProyecto_ProyectoInfo" Association="Self.FK_HabilidadesReqProyecto_ProyectoInfo">
+      <End Role="ProyectoInfo" EntitySet="ProyectoInfoes" />
+      <End Role="HabilidadesReqProyecto" EntitySet="HabilidadesReqProyectoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HabilidadesUsuario_UsuarioInfo" Association="Self.FK_HabilidadesUsuario_UsuarioInfo">
+      <End Role="UsuarioInfo" EntitySet="UsuarioInfoes" />
+      <End Role="HabilidadesUsuario" EntitySet="HabilidadesUsuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HabilidadesUsuario_UsuarioInfo1" Association="Self.FK_HabilidadesUsuario_UsuarioInfo1">
+      <End Role="UsuarioInfo" EntitySet="UsuarioInfoes" />
+      <End Role="HabilidadesUsuario" EntitySet="HabilidadesUsuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HorasServicioDadas_ProyectoInfo" Association="Self.FK_HorasServicioDadas_ProyectoInfo">
+      <End Role="ProyectoInfo" EntitySet="ProyectoInfoes" />
+      <End Role="HorasServicioDadas" EntitySet="HorasServicioDadas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Match_ProyectoInfo" Association="Self.FK_Match_ProyectoInfo">
+      <End Role="ProyectoInfo" EntitySet="ProyectoInfoes" />
+      <End Role="Match" EntitySet="Matches" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Match_UsuarioInfo" Association="Self.FK_Match_UsuarioInfo">
+      <End Role="UsuarioInfo" EntitySet="UsuarioInfoes" />
+      <End Role="Match" EntitySet="Matches" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PagoProj_ProyectoInfo" Association="Self.FK_PagoProj_ProyectoInfo">
+      <End Role="ProyectoInfo" EntitySet="ProyectoInfoes" />
+      <End Role="PagoProj" EntitySet="PagoProjs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TarjetasUsuarios_UsuarioInfo" Association="Self.FK_TarjetasUsuarios_UsuarioInfo">
+      <End Role="UsuarioInfo" EntitySet="UsuarioInfoes" />
+      <End Role="TarjetasUsuarios" EntitySet="TarjetasUsuarios" />
+    </AssociationSet>
+    <AssociationSet Name="Experiencia" Association="Self.Experiencia">
+      <End Role="ProyectoInfo" EntitySet="ProyectoInfoes" />
+      <End Role="UsuarioInfo" EntitySet="UsuarioInfoes" />
+    </AssociationSet>
+    <FunctionImport Name="BuscaMatch" ReturnType="Collection(TinderForWorkDBModel.BuscaMatch_Result)">
+      <Parameter Name="IDProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="Matricula" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertAbiilties">
+      <Parameter Name="Matricula" Mode="In" Type="String" />
+      <Parameter Name="Habilidad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertAbiiltiesForProject">
+      <Parameter Name="IDProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="Habilidad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertaTarjetas" ReturnType="Collection(String)">
+      <Parameter Name="IDProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="Tarjeta" Mode="In" Type="String" />
+      <Parameter Name="Matricula" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertExpirience">
+      <Parameter Name="Matricula" Mode="In" Type="String" />
+      <Parameter Name="ProyectoID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="InsertMatch">
+      <Parameter Name="Matricula" Mode="In" Type="String" />
+      <Parameter Name="IDProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="EstadoMatch" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="InsertPayment">
+      <Parameter Name="IDProyecto" Mode="In" Type="String" />
+      <Parameter Name="Pago" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="InsertProject">
+      <Parameter Name="HorasTrabajo" Mode="In" Type="Int32" />
+      <Parameter Name="NombreProyecto" Mode="In" Type="String" />
+      <Parameter Name="Descripcion" Mode="In" Type="String" />
+      <Parameter Name="Campo" Mode="In" Type="String" />
+      <Parameter Name="Matricula" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertServiceHours">
+      <Parameter Name="IDProyecto" Mode="In" Type="String" />
+      <Parameter Name="Hours" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="InsertUser">
+      <Parameter Name="Matricula" Mode="In" Type="String" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="ApellidoP" Mode="In" Type="String" />
+      <Parameter Name="ApellidoM" Mode="In" Type="String" />
+      <Parameter Name="Contrasena" Mode="In" Type="String" />
+      <Parameter Name="Correo" Mode="In" Type="String" />
+      <Parameter Name="Carrera" Mode="In" Type="Int32" />
+      <Parameter Name="Campus" Mode="In" Type="String" />
+      <Parameter Name="StatusOcupado" Mode="In" Type="Boolean" />
+      <Parameter Name="Telefono" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="MuestraTarjetas" ReturnType="Collection(String)">
+      <Parameter Name="IDProyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(TinderForWorkDBModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(TinderForWorkDBModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="UpdateHoras">
+      <Parameter Name="IDProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="horas" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateMatch">
+      <Parameter Name="MatchID" Mode="In" Type="Int32" />
+      <Parameter Name="newState" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UpdatePayment">
+      <Parameter Name="IDProyecto" Mode="In" Type="Int32" />
+      <Parameter Name="pago" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="ViewAbilitiesRequired" ReturnType="Collection(String)">
+      <Parameter Name="IDProyecto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ViewAbilitiesUser" ReturnType="Collection(String)">
+      <Parameter Name="Matricula" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="BuscaMatch_Result">
+    <Property Type="Int32" Name="MatchID" Nullable="false" />
+    <Property Type="Int32" Name="EstAlumno" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>
