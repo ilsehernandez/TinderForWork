@@ -63,11 +63,29 @@
     <Compile Include="Classes\ProyectoInfo.cs" />
     <Compile Include="Classes\TarjetasUsuarios.cs" />
     <Compile Include="Classes\UsuarioInfo.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Matching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Matching.Designer.cs">
+      <DependentUpon>Matching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NuevoProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NuevoProyecto.Designer.cs">
+      <DependentUpon>NuevoProyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\BuscaMatch_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -127,8 +145,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TinderForWorkDBDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Matching.resx">
+      <DependentUpon>Matching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NuevoProyecto.resx">
+      <DependentUpon>NuevoProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -138,6 +165,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Models\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -172,6 +200,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\70572494-project-presentation-icon-vector-illustration-style-is-flat-iconic-symbol-black-color-transparent-ba.jpg" />
+    <Content Include="Images\black-heart-hi.png" />
+    <Content Include="Images\coolest-roller-coaster-clipart-11-individual-people-icon-images-single-user-icon-clip-roller-coaster-clipart.png" />
+    <Content Include="Images\gear-clipart-MiLGz4A9T.png" />
+    <Content Include="Images\group-clipart-clip-art-group-300x300.png" />
+    <Content Include="Images\images.png" />
+    <Content Include="Images\thumbs.png" />
+    <Content Include="Images\thumbsdown.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
