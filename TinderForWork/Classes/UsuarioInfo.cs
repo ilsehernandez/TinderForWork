@@ -7,6 +7,10 @@ using System.Data.SqlTypes;
 
 namespace TinderForWork.Classes
 {
+    public enum Carrera{
+        ITC, IMT, ITIC, LIN, LDN, LAF, IIS, LED, IFI, IMA, IME, IMD, IBT
+    }
+
     public partial class UsuarioInfo
     {
         public UsuarioInfo()
@@ -59,9 +63,56 @@ namespace TinderForWork.Classes
             }
         }
 
+
+
         public ICollection<Experiencia> Experiencia { get; set; }
         public ICollection<HabilidadesUsuario> HabilidadesUsuario { get; set; }
         public ICollection<Match> Match { get; set; }
         public ICollection<TarjetasUsuarios> TarjetasUsuarios { get; set; }
+
+        public static List<UsuarioInfo> NextUser(int index, int ProjectID)
+        {
+            List<UsuarioInfo> list = new List<UsuarioInfo>();
+            SqlConnection connection = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=TinderForWorkDB;Integrated Security=True");
+            connection.Open();
+            {
+
+                SqlCommand cmd = connection.CreateCommand();
+                DataTable Data = new DataTable();
+                cmd.CommandText = "ViewPossibleUsers";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ProjectID", ProjectID);
+
+
+                cmd.ExecuteNonQuery();
+
+                SqlDataReader dataReader = cmd.ExecuteReader();
+
+
+                while (dataReader.Read())
+                {
+                    UsuarioInfo temp = new UsuarioInfo();
+                    // dataReader.Read();
+                    temp.Nombre = dataReader["Nombre"].ToString();
+                    temp.ApellidoM = dataReader["ApellidoM"].ToString();
+                    temp.ApellidoP = dataReader["ApellidoP"].ToString();
+                    temp.Carrera = Convert.ToInt32(dataReader["Carrera"].ToString());
+                    temp.Campus = dataReader["Campus"].ToString();
+                    temp.StatusOcupado = Convert.ToBoolean(dataReader["StatusOcupado"]);
+                    list.Add(temp);
+                    //dataReader.NextResult();
+                }
+
+                /*else
+                {
+                    index = 0;
+                }*/
+                dataReader.Close();
+                connection.Close();
+                return list;
+
+
+            }
+        }
     }
 }

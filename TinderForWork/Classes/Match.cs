@@ -104,14 +104,14 @@ namespace TinderForWork.Classes
             {
                 if (LikeNot == 1)
                 {
-                    if (EstAlumno != 5)
+                    if (EstAlumno != 5 && EstAlumno!=15&&EstAlumno!=13)
                     {
                         EstAlumno += 5;
                     }
                 }
                 else
                 {
-                    if (EstAlumno != 4)
+                    if (EstAlumno != 4 && EstAlumno != 12 && EstAlumno != 14)
                     {
                         EstAlumno += 4;
                     }
@@ -120,14 +120,14 @@ namespace TinderForWork.Classes
             {
                 if (LikeNot == 1)
                 {
-                    if (EstAlumno != 10)
+                    if (EstAlumno != 10 && EstAlumno != 14 && EstAlumno != 15)
                     {
                         EstAlumno += 10;
                     }
                 }
                 else
                 {
-                    if (EstAlumno != 8)
+                    if (EstAlumno != 8 && EstAlumno!=13 && EstAlumno!=12)
                     {
                         EstAlumno += 8;
                     }

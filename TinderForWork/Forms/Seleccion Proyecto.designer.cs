@@ -39,7 +39,7 @@
             this.ListaProyectos.FormattingEnabled = true;
             this.ListaProyectos.ItemHeight = 25;
             this.ListaProyectos.Location = new System.Drawing.Point(86, 108);
-            this.ListaProyectos.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ListaProyectos.Margin = new System.Windows.Forms.Padding(6);
             this.ListaProyectos.Name = "ListaProyectos";
             this.ListaProyectos.Size = new System.Drawing.Size(328, 404);
             this.ListaProyectos.TabIndex = 0;
@@ -57,7 +57,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(64, 671);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 44);
             this.button1.TabIndex = 2;
@@ -68,7 +68,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(308, 671);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button2.Margin = new System.Windows.Forms.Padding(6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 44);
             this.button2.TabIndex = 3;
@@ -84,7 +84,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ListaProyectos);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Seleccion_Proyecto";
             this.Text = "Seleccion_Proyecto";
             this.ResumeLayout(false);

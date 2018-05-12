@@ -15,6 +15,7 @@ namespace TinderForWork.Forms
     {
         string matricula;
         int IDProj;
+        List<UsuarioInfo> usuario;
         Match match;
         int ind=0;
         public MatchingProy(string mat, int projID)
@@ -23,6 +24,8 @@ namespace TinderForWork.Forms
             matricula = mat;
             IDProj = projID;
             match = new Match();
+            usuario = UsuarioInfo.NextUser(0, IDProj);
+            UpdateLabelsUsers();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,25 +51,25 @@ namespace TinderForWork.Forms
             {
                 try
                 {
-                    match.Matricula = "A00759898";
+                    match.Matricula = matricula;
                     match.ProyectoId = IDProj;
                     if (sender == Like)
                     {
                         match.GetMatch(0, 1);
                         match.UpdateMatch(0, 1);
-                        //UpdateLabelsProjects();
+                        UpdateLabelsUsers();
                     }
                     else if (sender == Dislike)
                     {
                         match.GetMatch(0, 0);
                         match.UpdateMatch(0, 0);
-                       // UpdateLabelsProjects();
+                        UpdateLabelsUsers();
                     }
                     else if (sender == SuperLike)
                     {
                         match.GetMatch(0, 1);
                         match.UpdateMatch(0,1);
-                        //UpdateLabelsProjects();
+                        UpdateLabelsUsers();
                     }
                     ind++;
                 }
@@ -87,13 +90,13 @@ namespace TinderForWork.Forms
 
         }
 
-        /*private void UpdateLabelsProjects()
+        private void UpdateLabelsUsers()
         {
-            lblName.Text = "Nombre: " + proyectos[ind].NombreProyecto;
-            lblDescripcion.Text = "Descripcion: " + proyectos[ind].Descripcion;
-            lblHorasTrabajo.Text = "Horas Esperadas de Trabajo: " + proyectos[ind].HorasTrabajo;
-            lblCampo.Text = "Campo: " + proyectos[ind].Campo;
-        }*/
+            labelNombre.Text = "Nombre: " + usuario[ind].Nombre;
+            labelApp.Text = "Apellido Paterno: " + usuario[ind].ApellidoP;
+            labelApm.Text = "Apellido Materno: " + usuario[ind].ApellidoM;
+            labelCampus.Text = "Campus: " + usuario[ind].Campus;
+        }
 
         private void BotonMatches_Click(object sender, EventArgs e)
         {

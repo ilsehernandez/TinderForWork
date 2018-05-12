@@ -108,28 +108,4 @@ namespace TinderForWork.Classes
 
 
 
-/*
 
-                cmd.ExecuteNonQuery();
-
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(a);
-                dataGridView1.DataSource = a;
-
-
-                if(index <= dataGridView1.RowCount - 1)
-                {
-                    lblNombre.Text = dataGridView1.Rows[index].Cells[0].Value.ToString();
-                    lblDesc.Text = dataGridView1.Rows[index].Cells[1].Value.ToString();
-                    lblArea.Text = dataGridView1.Rows[index].Cells[2].Value.ToString();
-                    lblID.Text= dataGridView1.Rows[index].Cells[3].Value.ToString();
-                    index++;
-                } else
-                {
-                    index = 0;
-                }
-
-                con.Close();
-                return index;
-            }
-        }*/

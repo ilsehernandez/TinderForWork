@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelCampus = new System.Windows.Forms.Label();
+            this.labelNombre = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Dislike = new System.Windows.Forms.Button();
             this.SuperLike = new System.Windows.Forms.Button();
@@ -39,29 +39,31 @@
             this.VerComoProyecto = new System.Windows.Forms.Button();
             this.AñadirProyecto = new System.Windows.Forms.Button();
             this.lblNoMas = new System.Windows.Forms.Label();
+            this.labelApp = new System.Windows.Forms.Label();
+            this.labelApm = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label2
+            // labelCampus
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(574, 321);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "label1dadfsdcsdcsdvsdcsdc";
+            this.labelCampus.AutoSize = true;
+            this.labelCampus.Location = new System.Drawing.Point(574, 321);
+            this.labelCampus.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelCampus.Name = "labelCampus";
+            this.labelCampus.Size = new System.Drawing.Size(282, 25);
+            this.labelCampus.TabIndex = 6;
+            this.labelCampus.Text = "label1dadfsdcsdcsdvsdcsdc";
             // 
-            // label1
+            // labelNombre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(574, 77);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 25);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "label1dadfsdcsdcsdvsdcsdc";
+            this.labelNombre.AutoSize = true;
+            this.labelNombre.Location = new System.Drawing.Point(574, 102);
+            this.labelNombre.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelNombre.Name = "labelNombre";
+            this.labelNombre.Size = new System.Drawing.Size(282, 25);
+            this.labelNombre.TabIndex = 7;
+            this.labelNombre.Text = "label1dadfsdcsdcsdvsdcsdc";
             // 
             // groupBox1
             // 
@@ -69,9 +71,9 @@
             this.groupBox1.Controls.Add(this.SuperLike);
             this.groupBox1.Controls.Add(this.Like);
             this.groupBox1.Location = new System.Drawing.Point(114, 598);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox1.Size = new System.Drawing.Size(1030, 192);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
@@ -81,7 +83,7 @@
             this.Dislike.BackgroundImage = global::TinderForWork.Properties.Resources.thumbsdown;
             this.Dislike.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Dislike.Location = new System.Drawing.Point(12, 25);
-            this.Dislike.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Dislike.Margin = new System.Windows.Forms.Padding(6);
             this.Dislike.Name = "Dislike";
             this.Dislike.Size = new System.Drawing.Size(168, 156);
             this.Dislike.TabIndex = 0;
@@ -93,7 +95,7 @@
             this.SuperLike.BackgroundImage = global::TinderForWork.Properties.Resources.black_heart_hi;
             this.SuperLike.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SuperLike.Location = new System.Drawing.Point(442, 25);
-            this.SuperLike.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.SuperLike.Margin = new System.Windows.Forms.Padding(6);
             this.SuperLike.Name = "SuperLike";
             this.SuperLike.Size = new System.Drawing.Size(168, 156);
             this.SuperLike.TabIndex = 0;
@@ -105,7 +107,7 @@
             this.Like.BackgroundImage = global::TinderForWork.Properties.Resources.thumbs;
             this.Like.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Like.Location = new System.Drawing.Point(850, 25);
-            this.Like.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Like.Margin = new System.Windows.Forms.Padding(6);
             this.Like.Name = "Like";
             this.Like.Size = new System.Drawing.Size(168, 156);
             this.Like.TabIndex = 0;
@@ -118,7 +120,7 @@
             this.panel1.Controls.Add(this.VerComoProyecto);
             this.panel1.Controls.Add(this.AñadirProyecto);
             this.panel1.Location = new System.Drawing.Point(1264, 77);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(222, 565);
             this.panel1.TabIndex = 4;
@@ -129,7 +131,7 @@
             this.VerComoUsuario.BackgroundImage = global::TinderForWork.Properties.Resources.coolest_roller_coaster_clipart_11_individual_people_icon_images_single_user_icon_clip_roller_coaster_clipart;
             this.VerComoUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.VerComoUsuario.Location = new System.Drawing.Point(44, 173);
-            this.VerComoUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.VerComoUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.VerComoUsuario.Name = "VerComoUsuario";
             this.VerComoUsuario.Size = new System.Drawing.Size(150, 137);
             this.VerComoUsuario.TabIndex = 0;
@@ -141,7 +143,7 @@
             this.VerComoProyecto.BackgroundImage = global::TinderForWork.Properties.Resources.group_clipart_clip_art_group_300x300;
             this.VerComoProyecto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.VerComoProyecto.Location = new System.Drawing.Point(44, 6);
-            this.VerComoProyecto.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.VerComoProyecto.Margin = new System.Windows.Forms.Padding(6);
             this.VerComoProyecto.Name = "VerComoProyecto";
             this.VerComoProyecto.Size = new System.Drawing.Size(150, 156);
             this.VerComoProyecto.TabIndex = 0;
@@ -153,7 +155,7 @@
             this.AñadirProyecto.BackgroundImage = global::TinderForWork.Properties.Resources.plus_sign_hi__1_;
             this.AñadirProyecto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.AñadirProyecto.Location = new System.Drawing.Point(44, 321);
-            this.AñadirProyecto.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.AñadirProyecto.Margin = new System.Windows.Forms.Padding(6);
             this.AñadirProyecto.Name = "AñadirProyecto";
             this.AñadirProyecto.Size = new System.Drawing.Size(150, 142);
             this.AñadirProyecto.TabIndex = 0;
@@ -168,17 +170,39 @@
             this.lblNoMas.Size = new System.Drawing.Size(0, 25);
             this.lblNoMas.TabIndex = 8;
             // 
+            // labelApp
+            // 
+            this.labelApp.AutoSize = true;
+            this.labelApp.Location = new System.Drawing.Point(574, 187);
+            this.labelApp.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelApp.Name = "labelApp";
+            this.labelApp.Size = new System.Drawing.Size(282, 25);
+            this.labelApp.TabIndex = 7;
+            this.labelApp.Text = "label1dadfsdcsdcsdvsdcsdc";
+            // 
+            // labelApm
+            // 
+            this.labelApm.AutoSize = true;
+            this.labelApm.Location = new System.Drawing.Point(574, 250);
+            this.labelApm.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelApm.Name = "labelApm";
+            this.labelApm.Size = new System.Drawing.Size(282, 25);
+            this.labelApm.TabIndex = 7;
+            this.labelApm.Text = "label1dadfsdcsdcsdvsdcsdc";
+            // 
             // MatchingProy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1562, 838);
             this.Controls.Add(this.lblNoMas);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelCampus);
+            this.Controls.Add(this.labelApm);
+            this.Controls.Add(this.labelApp);
+            this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "MatchingProy";
             this.Text = "MatchingProy";
             this.groupBox1.ResumeLayout(false);
@@ -190,8 +214,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelCampus;
+        private System.Windows.Forms.Label labelNombre;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button Dislike;
         private System.Windows.Forms.Button SuperLike;
@@ -201,5 +225,7 @@
         private System.Windows.Forms.Button VerComoProyecto;
         private System.Windows.Forms.Button AñadirProyecto;
         private System.Windows.Forms.Label lblNoMas;
+        private System.Windows.Forms.Label labelApp;
+        private System.Windows.Forms.Label labelApm;
     }
 }
