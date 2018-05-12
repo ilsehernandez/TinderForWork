@@ -11,20 +11,18 @@ using TinderForWork.Classes;
 
 namespace TinderForWork.Forms
 {
-    public partial class Matching : Form
+    public partial class MatchingProy : Form
     {
         string matricula;
-        List<ProyectoInfo> proyectos;
-        int ind = 0;
-        Match match = new Match();
-
-        public Matching(string mat)
+        int IDProj;
+        Match match;
+        int ind=0;
+        public MatchingProy(string mat, int projID)
         {
             InitializeComponent();
             matricula = mat;
-            proyectos = ProyectoInfo.NextProy(0, matricula);
-            UpdateLabelsProjects();
-            ind++;
+            IDProj = projID;
+            match = new Match();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,32 +40,37 @@ namespace TinderForWork.Forms
             }
             else if (sender == VerComoUsuario)
             {
+                Matching matching = new Matching(matricula);
+                matching.ShowDialog();
+                Close();
             }
             else
             {
                 try
                 {
+                    match.Matricula = "A00759898";
+                    match.ProyectoId = IDProj;
                     if (sender == Like)
                     {
-                        match.GetMatch(1, 1);
-                        match.UpdateMatch(1, 1);
-                        UpdateLabelsProjects();
+                        match.GetMatch(0, 1);
+                        match.UpdateMatch(0, 1);
+                        //UpdateLabelsProjects();
                     }
                     else if (sender == Dislike)
                     {
-                        match.GetMatch(1, 0);
-                        match.UpdateMatch(1, 0);
-                        UpdateLabelsProjects();
+                        match.GetMatch(0, 0);
+                        match.UpdateMatch(0, 0);
+                       // UpdateLabelsProjects();
                     }
                     else if (sender == SuperLike)
                     {
-                        match.GetMatch(1, 1);
-                        match.UpdateMatch(1, 1);
-                        UpdateLabelsProjects();
+                        match.GetMatch(0, 1);
+                        match.UpdateMatch(0,1);
+                        //UpdateLabelsProjects();
                     }
                     ind++;
                 }
-                catch(ArgumentOutOfRangeException ex)
+                catch (ArgumentOutOfRangeException ex)
                 {
                     lblNoMas.Text = "Se han acabado los proyectos";
                 }
@@ -84,18 +87,20 @@ namespace TinderForWork.Forms
 
         }
 
-        private void UpdateLabelsProjects()
+        /*private void UpdateLabelsProjects()
         {
-            lblName.Text = "Nombre: "+proyectos[ind].NombreProyecto;
+            lblName.Text = "Nombre: " + proyectos[ind].NombreProyecto;
             lblDescripcion.Text = "Descripcion: " + proyectos[ind].Descripcion;
             lblHorasTrabajo.Text = "Horas Esperadas de Trabajo: " + proyectos[ind].HorasTrabajo;
             lblCampo.Text = "Campo: " + proyectos[ind].Campo;
-        }
+        }*/
 
         private void BotonMatches_Click(object sender, EventArgs e)
         {
             Match_List VentanaMatches = new Match_List();
-             VentanaMatches.Show();
+            VentanaMatches.Show();
         }
+
+        private void Like_Click(object sender, EventArgs e) { }
     }
 }

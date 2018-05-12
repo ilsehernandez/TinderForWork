@@ -37,24 +37,17 @@
             this.Dislike = new System.Windows.Forms.Button();
             this.SuperLike = new System.Windows.Forms.Button();
             this.Like = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.proyectoIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horasTrabajoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreProyectoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.campoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.horasServicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pagoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.matriculaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblDescripcion = new System.Windows.Forms.Label();
             this.viewPossibleProjectsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tinderForWorkDBDataSet = new TinderForWork.TinderForWorkDBDataSet();
             this.viewPossibleProjectsTableAdapter = new TinderForWork.TinderForWorkDBDataSetTableAdapters.ViewPossibleProjectsTableAdapter();
+            this.lblHorasTrabajo = new System.Windows.Forms.Label();
+            this.lblCampo = new System.Windows.Forms.Label();
+            this.lblNoMas = new System.Windows.Forms.Label();
+            this.BotonMatches = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewPossibleProjectsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tinderForWorkDBDataSet)).BeginInit();
             this.SuspendLayout();
@@ -156,101 +149,25 @@
             this.Like.UseVisualStyleBackColor = true;
             this.Like.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // lblName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(664, 129);
-            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1dadfsdcsdcsdvsdcsdc";
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(664, 129);
+            this.lblName.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(282, 25);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "label1dadfsdcsdcsdvsdcsdc";
             // 
-            // label2
+            // lblDescripcion
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(664, 373);
-            this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label1dadfsdcsdcsdvsdcsdc";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.proyectoIDDataGridViewTextBoxColumn,
-            this.horasTrabajoDataGridViewTextBoxColumn,
-            this.nombreProyectoDataGridViewTextBoxColumn,
-            this.descripcionDataGridViewTextBoxColumn,
-            this.campoDataGridViewTextBoxColumn,
-            this.activoDataGridViewCheckBoxColumn,
-            this.horasServicioDataGridViewTextBoxColumn,
-            this.pagoDataGridViewTextBoxColumn,
-            this.matriculaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.viewPossibleProjectsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(249, 180);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 31;
-            this.dataGridView1.Size = new System.Drawing.Size(1082, 156);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // proyectoIDDataGridViewTextBoxColumn
-            // 
-            this.proyectoIDDataGridViewTextBoxColumn.DataPropertyName = "ProyectoID";
-            this.proyectoIDDataGridViewTextBoxColumn.HeaderText = "ProyectoID";
-            this.proyectoIDDataGridViewTextBoxColumn.Name = "proyectoIDDataGridViewTextBoxColumn";
-            // 
-            // horasTrabajoDataGridViewTextBoxColumn
-            // 
-            this.horasTrabajoDataGridViewTextBoxColumn.DataPropertyName = "HorasTrabajo";
-            this.horasTrabajoDataGridViewTextBoxColumn.HeaderText = "HorasTrabajo";
-            this.horasTrabajoDataGridViewTextBoxColumn.Name = "horasTrabajoDataGridViewTextBoxColumn";
-            // 
-            // nombreProyectoDataGridViewTextBoxColumn
-            // 
-            this.nombreProyectoDataGridViewTextBoxColumn.DataPropertyName = "NombreProyecto";
-            this.nombreProyectoDataGridViewTextBoxColumn.HeaderText = "NombreProyecto";
-            this.nombreProyectoDataGridViewTextBoxColumn.Name = "nombreProyectoDataGridViewTextBoxColumn";
-            // 
-            // descripcionDataGridViewTextBoxColumn
-            // 
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            // 
-            // campoDataGridViewTextBoxColumn
-            // 
-            this.campoDataGridViewTextBoxColumn.DataPropertyName = "Campo";
-            this.campoDataGridViewTextBoxColumn.HeaderText = "Campo";
-            this.campoDataGridViewTextBoxColumn.Name = "campoDataGridViewTextBoxColumn";
-            // 
-            // activoDataGridViewCheckBoxColumn
-            // 
-            this.activoDataGridViewCheckBoxColumn.DataPropertyName = "Activo";
-            this.activoDataGridViewCheckBoxColumn.HeaderText = "Activo";
-            this.activoDataGridViewCheckBoxColumn.Name = "activoDataGridViewCheckBoxColumn";
-            // 
-            // horasServicioDataGridViewTextBoxColumn
-            // 
-            this.horasServicioDataGridViewTextBoxColumn.DataPropertyName = "HorasServicio";
-            this.horasServicioDataGridViewTextBoxColumn.HeaderText = "HorasServicio";
-            this.horasServicioDataGridViewTextBoxColumn.Name = "horasServicioDataGridViewTextBoxColumn";
-            // 
-            // pagoDataGridViewTextBoxColumn
-            // 
-            this.pagoDataGridViewTextBoxColumn.DataPropertyName = "Pago";
-            this.pagoDataGridViewTextBoxColumn.HeaderText = "Pago";
-            this.pagoDataGridViewTextBoxColumn.Name = "pagoDataGridViewTextBoxColumn";
-            // 
-            // matriculaDataGridViewTextBoxColumn
-            // 
-            this.matriculaDataGridViewTextBoxColumn.DataPropertyName = "Matricula";
-            this.matriculaDataGridViewTextBoxColumn.HeaderText = "Matricula";
-            this.matriculaDataGridViewTextBoxColumn.Name = "matriculaDataGridViewTextBoxColumn";
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(664, 165);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(282, 25);
+            this.lblDescripcion.TabIndex = 3;
+            this.lblDescripcion.Text = "label1dadfsdcsdcsdvsdcsdc";
             // 
             // viewPossibleProjectsBindingSource
             // 
@@ -266,15 +183,56 @@
             // 
             this.viewPossibleProjectsTableAdapter.ClearBeforeFill = true;
             // 
+            // lblHorasTrabajo
+            // 
+            this.lblHorasTrabajo.AutoSize = true;
+            this.lblHorasTrabajo.Location = new System.Drawing.Point(664, 351);
+            this.lblHorasTrabajo.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.lblHorasTrabajo.Name = "lblHorasTrabajo";
+            this.lblHorasTrabajo.Size = new System.Drawing.Size(282, 25);
+            this.lblHorasTrabajo.TabIndex = 3;
+            this.lblHorasTrabajo.Text = "label1dadfsdcsdcsdvsdcsdc";
+            // 
+            // lblCampo
+            // 
+            this.lblCampo.AutoSize = true;
+            this.lblCampo.Location = new System.Drawing.Point(664, 386);
+            this.lblCampo.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.lblCampo.Name = "lblCampo";
+            this.lblCampo.Size = new System.Drawing.Size(282, 25);
+            this.lblCampo.TabIndex = 3;
+            this.lblCampo.Text = "label1dadfsdcsdcsdvsdcsdc";
+            // 
+            // lblNoMas
+            // 
+            this.lblNoMas.AutoSize = true;
+            this.lblNoMas.Location = new System.Drawing.Point(669, 514);
+            this.lblNoMas.Name = "lblNoMas";
+            this.lblNoMas.Size = new System.Drawing.Size(0, 25);
+            this.lblNoMas.TabIndex = 4;
+            // 
+            // BotonMatches
+            // 
+            this.BotonMatches.Location = new System.Drawing.Point(79, 282);
+            this.BotonMatches.Name = "BotonMatches";
+            this.BotonMatches.Size = new System.Drawing.Size(109, 101);
+            this.BotonMatches.TabIndex = 5;
+            this.BotonMatches.Text = "Tus Matches";
+            this.BotonMatches.UseVisualStyleBackColor = true;
+            this.BotonMatches.Click += new System.EventHandler(this.BotonMatches_Click);
+            // 
             // Matching
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1600, 866);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BotonMatches);
+            this.Controls.Add(this.lblNoMas);
+            this.Controls.Add(this.lblCampo);
+            this.Controls.Add(this.lblHorasTrabajo);
+            this.Controls.Add(this.lblDescripcion);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -283,7 +241,6 @@
             this.Load += new System.EventHandler(this.Matching_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewPossibleProjectsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tinderForWorkDBDataSet)).EndInit();
             this.ResumeLayout(false);
@@ -300,21 +257,15 @@
         private System.Windows.Forms.Button VerComoProyecto;
         private System.Windows.Forms.Button SuperLike;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Button AñadirProyecto;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn proyectoIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horasTrabajoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreProyectoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn campoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn activoDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horasServicioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pagoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn matriculaDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource viewPossibleProjectsBindingSource;
         private TinderForWorkDBDataSet tinderForWorkDBDataSet;
         private TinderForWorkDBDataSetTableAdapters.ViewPossibleProjectsTableAdapter viewPossibleProjectsTableAdapter;
+        private System.Windows.Forms.Label lblHorasTrabajo;
+        private System.Windows.Forms.Label lblCampo;
+        private System.Windows.Forms.Label lblNoMas;
+        private System.Windows.Forms.Button BotonMatches;
     }
 }

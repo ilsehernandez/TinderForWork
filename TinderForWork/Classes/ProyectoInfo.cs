@@ -58,7 +58,7 @@ namespace TinderForWork.Classes
             }
         }
 
-        public static List<ProyectoInfo> NextProy(DataGridView dataGridView1, int index, string mat)
+        public static List<ProyectoInfo> NextProy(int index, string mat)
         {
             List<ProyectoInfo> list = new List<ProyectoInfo>();
             SqlConnection connection = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=TinderForWorkDB;Integrated Security=True");
@@ -83,9 +83,10 @@ namespace TinderForWork.Classes
                     // dataReader.Read();
                     temp.ProyectoId = Convert.ToInt32(dataReader["ProyectoID"].ToString());
                     temp.HorasTrabajo = Convert.ToInt32(dataReader["HorasTrabajo"].ToString());
-                    temp.Descripcion = dataReader["NombreProyecto"].ToString();
-                    temp.Campo = dataReader["Descripcion"].ToString();
-                   // temp.StatusProyect = Convert.ToBoolean(Convert.ToInt32(dataReader["Activo"].ToString()));
+                    temp.NombreProyecto = dataReader["NombreProyecto"].ToString();
+                    temp.Descripcion = dataReader["Descripcion"].ToString();
+                    temp.Campo = dataReader["Campo"].ToString();
+                    //temp.StatusProyect = Convert.ToBoolean(Convert.ToInt32(dataReader["Activo"].ToString()));
                     temp.Matricula = dataReader["Matricula"].ToString();
                     list.Add(temp);
                     //dataReader.NextResult();

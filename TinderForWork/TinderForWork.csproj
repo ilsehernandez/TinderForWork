@@ -69,17 +69,35 @@
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Match List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Match List.Designer.cs">
+      <DependentUpon>Match List.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Matching.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Matching.Designer.cs">
       <DependentUpon>Matching.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MatchingProy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MatchingProy.designer.cs">
+      <DependentUpon>MatchingProy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\NuevoProyecto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\NuevoProyecto.Designer.cs">
       <DependentUpon>NuevoProyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Seleccion Proyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Seleccion Proyecto.designer.cs">
+      <DependentUpon>Seleccion Proyecto.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SignUp.cs">
       <SubType>Form</SubType>
@@ -148,11 +166,20 @@
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Match List.resx">
+      <DependentUpon>Match List.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Matching.resx">
       <DependentUpon>Matching.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MatchingProy.resx">
+      <DependentUpon>MatchingProy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\NuevoProyecto.resx">
       <DependentUpon>NuevoProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Seleccion Proyecto.resx">
+      <DependentUpon>Seleccion Proyecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
