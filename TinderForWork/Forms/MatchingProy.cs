@@ -97,7 +97,7 @@ namespace TinderForWork.Forms
 
         private void BotonMatches_Click(object sender, EventArgs e)
         {
-            Match_List VentanaMatches = new Match_List();
+            Match_List VentanaMatches = new Match_List(matricula);
             VentanaMatches.Show();
         }
 

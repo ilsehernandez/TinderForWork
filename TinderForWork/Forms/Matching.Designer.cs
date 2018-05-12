@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Matching));
             this.panel1 = new System.Windows.Forms.Panel();
             this.VerComoUsuario = new System.Windows.Forms.Button();
             this.VerComoProyecto = new System.Windows.Forms.Button();
@@ -66,7 +67,7 @@
             // VerComoUsuario
             // 
             this.VerComoUsuario.BackColor = System.Drawing.Color.Gainsboro;
-            this.VerComoUsuario.BackgroundImage = global::TinderForWork.Properties.Resources.coolest_roller_coaster_clipart_11_individual_people_icon_images_single_user_icon_clip_roller_coaster_clipart;
+            this.VerComoUsuario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VerComoUsuario.BackgroundImage")));
             this.VerComoUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.VerComoUsuario.Location = new System.Drawing.Point(44, 173);
             this.VerComoUsuario.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -78,7 +79,7 @@
             // 
             // VerComoProyecto
             // 
-            this.VerComoProyecto.BackgroundImage = global::TinderForWork.Properties.Resources.group_clipart_clip_art_group_300x300;
+            this.VerComoProyecto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VerComoProyecto.BackgroundImage")));
             this.VerComoProyecto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.VerComoProyecto.Location = new System.Drawing.Point(44, 6);
             this.VerComoProyecto.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -90,7 +91,7 @@
             // 
             // AñadirProyecto
             // 
-            this.AñadirProyecto.BackgroundImage = global::TinderForWork.Properties.Resources.plus_sign_hi__1_;
+            this.AñadirProyecto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AñadirProyecto.BackgroundImage")));
             this.AñadirProyecto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.AñadirProyecto.Location = new System.Drawing.Point(44, 321);
             this.AñadirProyecto.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -115,7 +116,7 @@
             // 
             // Dislike
             // 
-            this.Dislike.BackgroundImage = global::TinderForWork.Properties.Resources.thumbsdown;
+            this.Dislike.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Dislike.BackgroundImage")));
             this.Dislike.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Dislike.Location = new System.Drawing.Point(12, 25);
             this.Dislike.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -127,7 +128,7 @@
             // 
             // SuperLike
             // 
-            this.SuperLike.BackgroundImage = global::TinderForWork.Properties.Resources.black_heart_hi;
+            this.SuperLike.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SuperLike.BackgroundImage")));
             this.SuperLike.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SuperLike.Location = new System.Drawing.Point(442, 25);
             this.SuperLike.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -139,7 +140,7 @@
             // 
             // Like
             // 
-            this.Like.BackgroundImage = global::TinderForWork.Properties.Resources.thumbs;
+            this.Like.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Like.BackgroundImage")));
             this.Like.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Like.Location = new System.Drawing.Point(850, 25);
             this.Like.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -219,7 +220,7 @@
             this.BotonMatches.TabIndex = 5;
             this.BotonMatches.Text = "Tus Matches";
             this.BotonMatches.UseVisualStyleBackColor = true;
-            this.BotonMatches.Click += new System.EventHandler(this.BotonMatches_Click);
+            this.BotonMatches.Click += new System.EventHandler(this.button1_Click);
             // 
             // Matching
             // 

@@ -87,6 +87,12 @@
     <Compile Include="Forms\MatchingProy.designer.cs">
       <DependentUpon>MatchingProy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MListP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MListP.Designer.cs">
+      <DependentUpon>MListP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\NuevoProyecto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MatchingProy.resx">
       <DependentUpon>MatchingProy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MListP.resx">
+      <DependentUpon>MListP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\NuevoProyecto.resx">
       <DependentUpon>NuevoProyecto.cs</DependentUpon>

@@ -33,8 +33,10 @@ namespace TinderForWork.Classes
                 cmd.ExecuteNonQuery();
 
                 SqlDataReader reader = cmd.ExecuteReader();
-                if (!reader.Read())
+                if (!reader.HasRows)
+                {
                     MatchId = 0;
+                }
                 while (reader.Read())
                 {
                     this.MatchId = Convert.ToInt32((reader["MatchID"].ToString()));
@@ -82,9 +84,9 @@ namespace TinderForWork.Classes
                     cmd.CommandText = "InsertMatch";
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.AddWithValue("@Matricula", this.Matricula);
-                    cmd.Parameters.AddWithValue("@IDProyecto", this.ProyectoId);
-                    cmd.Parameters.AddWithValue("@EstadoMatch", this.EstAlumno);
+                    cmd.Parameters.AddWithValue("@Matricula", Matricula);
+                    cmd.Parameters.AddWithValue("@IDProyecto", ProyectoId);
+                    cmd.Parameters.AddWithValue("@EstadoMatch", EstAlumno);
 
                     cmd.ExecuteNonQuery();
                     sql.Close();

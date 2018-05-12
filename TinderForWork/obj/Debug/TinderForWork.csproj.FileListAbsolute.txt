@@ -34,3 +34,4 @@ C:\Users\Ilse E Hernandez E\Documents\Cuarto Semestre\Bases de Datos\TinderForWo
 C:\Users\Ilse E Hernandez E\Documents\Cuarto Semestre\Bases de Datos\TinderForWorkWinForm\TinderForWorkGit\TinderForWork\TinderForWork\obj\Debug\TinderForWork.Forms.Match_List.resources
 C:\Users\Ilse E Hernandez E\Documents\Cuarto Semestre\Bases de Datos\TinderForWorkWinForm\TinderForWorkGit\TinderForWork\TinderForWork\obj\Debug\TinderForWork.Forms.MatchingProy.resources
 C:\Users\Ilse E Hernandez E\Documents\Cuarto Semestre\Bases de Datos\TinderForWorkWinForm\TinderForWorkGit\TinderForWork\TinderForWork\obj\Debug\TinderForWork.Forms.Seleccion_Proyecto.resources
+C:\Users\Ilse E Hernandez E\Documents\Cuarto Semestre\Bases de Datos\TinderForWorkWinForm\TinderForWorkGit\TinderForWork\TinderForWork\obj\Debug\TinderForWork.Forms.MListP.resources

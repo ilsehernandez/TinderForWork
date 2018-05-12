@@ -24,7 +24,6 @@ namespace TinderForWork.Forms
             matricula = mat;
             proyectos = ProyectoInfo.NextProy(0, matricula);
             UpdateLabelsProjects();
-            ind++;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,13 +39,18 @@ namespace TinderForWork.Forms
                 VentanaDeProyecto.ShowDialog();
                 Close();
             }
-            else if (sender == VerComoUsuario)
+            else if (sender == BotonMatches)
             {
+                Match_List match_List = new Match_List(matricula);
+                match_List.ShowDialog();
+                Close();
             }
             else
             {
                 try
                 {
+                    match.Matricula = matricula;
+                    match.ProyectoId = proyectos[ind].ProyectoId;
                     if (sender == Like)
                     {
                         match.GetMatch(1, 1);
@@ -94,8 +98,6 @@ namespace TinderForWork.Forms
 
         private void BotonMatches_Click(object sender, EventArgs e)
         {
-            Match_List VentanaMatches = new Match_List();
-             VentanaMatches.Show();
         }
     }
 }
